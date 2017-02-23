@@ -28,7 +28,7 @@ void main()
 		 cin>>base;
 		 cout<<"Ingrese la altura"<<endl;
 		 cin>>altura;
-		 area=base*altura;
+		 area=(base*altura)/2;
 		 cout<<"El area es: "<<area<<endl;
 		 break;
 	   }
