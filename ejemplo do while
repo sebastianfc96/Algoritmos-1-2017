@@ -1,0 +1,20 @@
+// DOWHILE.cpp : Defines the entry point for the console application.
+//
+//muestre numeros del 1 al 10
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+    int contador;
+    contador=0;
+    do{
+        cout<<contador<<endl;
+        contador=contador+1;
+    }while(contador<=10);
+getch();
+
+}
