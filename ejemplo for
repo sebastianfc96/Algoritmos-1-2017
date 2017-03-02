@@ -1,0 +1,17 @@
+// for.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main()
+{int numero;
+     for(numero=10;numero>=0;numero--)
+	 {cout<<numero<<endl;
+	 }
+ getch();
+}
