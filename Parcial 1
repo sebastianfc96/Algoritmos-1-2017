@@ -1,0 +1,52 @@
+// parcial 1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+float det(float a,float b,float c);
+
+　
+void main()
+{float x1,x2,deter,z,m,a,b,c,m1;
+ int ;
+ cout<<"Ingrese las variables a,b,c de la ecuacion cuadratica"<<endl;
+ cin>>a;
+ cin>>b;
+ cin>>c;
+ z=(-b)/(2*a);
+ deter=det(a,b,c);
+ m=(sqrt(deter))/(2*a);
+ x1=z+m;
+ x2=z-m;
+  if(deter==0)
+     {cout<<"La respuesta es unica"<<endl;
+      cout<<"x="<<z;
+	 }
+ if(deter<0)
+     {m1=(sqrt(-deter))/(2*a);
+	  cout<<"La respuesta es imaginaria"<<endl;
+      cout<<"x1="<<z<<"+"<<m1<<"i"<<endl;
+	  cout<<"x2="<<z<<"-"<<m1<<"i"<<endl;
+     }
+ else
+	 {if(2*a<=0)
+	     cout<<"La respuesta no es real"<<endl;
+	 }
+ if((deter>0)&&(2*a>0))
+		 {cout<<"los resultados:"<<endl;
+		  cout<<"x1="<<x1<<endl;
+		  cout<<"x2="<<x2<<endl;
+		 }
+ getch();
+}
+
+float det(float a,float b,float c)
+{float det;
+ det=powf(b,2)-(4*a*c);
+ return det;
+}
